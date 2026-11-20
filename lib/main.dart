@@ -7,25 +7,25 @@ import 'package:permission_handler/permission_handler.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: AnjelBakeryApp(),
+    home: AngelBakeryApp(),
     debugShowCheckedModeBanner: false,
   ));
 }
 
-class AnjelBakeryApp extends StatefulWidget {
-  const AnjelBakeryApp({super.key});
+class AngelBakeryApp extends StatefulWidget {
+  const AngelBakeryApp({super.key});
 
   @override
-  State<AnjelBakeryApp> createState() => _AnjelBakeryAppState();
+  State<AngelBakeryApp> createState() => _AngelBakeryAppState();
 }
 
-class _AnjelBakeryAppState extends State<AnjelBakeryApp> {
+class _AngelBakeryAppState extends State<AngelBakeryApp> {
   late final WebViewController controller;
   bool isOffline = false;
   bool isLoading = true;
   late StreamSubscription<List<ConnectivityResult>> _connectivitySubscription;
 
-  // New Anjel Bakery URL
+  // Website URL
   final String targetUrl = 'https://anjelbakery.netlify.app/';
 
   @override
@@ -168,7 +168,7 @@ class _AnjelBakeryAppState extends State<AnjelBakeryApp> {
                       Icon(Icons.bakery_dining_rounded, size: 80, color: Color(0xFFD97706)),
                       SizedBox(height: 16),
                       Text(
-                        'Anjel Bakery',
+                        'Angel Bakery',
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
